@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMCE EventHub | Registration</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark">D</span><span>DMCE <strong>EventHub</strong></span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰</button>
+<nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+<a href="../index.html">Home</a><a href="events.html">Events</a><a class="active" href="registration.html">Registration</a><a href="about.html">About</a><a href="contact.html">Contact Us</a>
+</nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">JOIN AN EVENT</p><h1>Event Registration</h1><p>Choose an event and register for this classroom demonstration.</p></div></section>
+<section class="page-content"><div class="container two-col">
+<div class="panel"><h2>Why register?</h2><p>EventHub brings discovery and registration together in one simple experience.</p><ul><li>Find relevant events</li><li>Register online</li><li>Receive event information</li><li>Participate and showcase</li></ul></div>
+<div class="panel">
+<form id="registrationForm" class="form-grid">
+<div class="status" role="status" aria-live="polite"></div>
+<div><label for="regName">Full Name *</label><input id="regName" type="text" maxlength="60" required></div>
+<div><label for="regEmail">Email *</label><input id="regEmail" type="email" maxlength="120" required></div>
+<div><label for="eventChoice">Select Event *</label>
+<select id="eventChoice" required><option value="">Select event</option><option>Web Development Workshop</option><option>Campus Cultural Fest</option><option>Innovation & Ideas Forum</option></select></div>
+<button class="btn btn-primary" type="submit">Register</button>
+</form></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><strong>DMCE EventHub</strong><p>© 2026 DMCE EventHub</p></div></footer>
+<script src="../assets/js/script.js" defer></script>
+</body></html>

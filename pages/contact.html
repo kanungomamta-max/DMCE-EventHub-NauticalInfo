@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact DMCE EventHub.">
+  <title>DMCE EventHub | Contact Us</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">D</span><span>DMCE <strong>EventHub</strong></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="registration.html">Registration</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h1>Contact Us</h1>
+        <p>Have a question, feedback or suggestion? Send a message to DMCE EventHub.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container two-col">
+        <aside class="panel">
+          <p class="eyebrow">DMCE EVENTHUB</p>
+          <h2>We'd love to hear from you.</h2>
+          <p>Use the form to ask about events, registration, technical support, feedback or collaboration.</p>
+
+          <div class="event-meta"><span>📍 DMCE Campus</span></div>
+          <div class="event-meta"><span>✉ eventhub@example.edu</span></div>
+          <div class="event-meta"><span>🕐 Monday–Friday, 9:00 AM–5:00 PM</span></div>
+
+          <div class="panel" style="box-shadow:none; margin-top:20px; background:#eef5ff;">
+            <strong>Learning note</strong>
+            <p class="form-note">This form demonstrates HTML validation, CSS states and JavaScript validation. A production system must validate again on the server.</p>
+          </div>
+        </aside>
+
+        <div class="panel">
+          <form id="contactForm" class="form-grid" novalidate>
+            <div class="status" role="status" aria-live="polite"></div>
+
+            <div class="form-row">
+              <div>
+                <label for="fullName">Full Name *</label>
+                <input id="fullName" name="fullName" type="text" maxlength="60" autocomplete="name" required>
+                <div id="fullNameError" class="field-error"></div>
+              </div>
+              <div>
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email" maxlength="120" autocomplete="email" required>
+                <div id="emailError" class="field-error"></div>
+              </div>
+            </div>
+
+            <div>
+              <label for="mobile">Mobile Number</label>
+              <input id="mobile" name="mobile" type="tel" inputmode="tel" maxlength="14" autocomplete="tel" placeholder="+91 9876543210">
+              <div id="mobileError" class="field-error"></div>
+            </div>
+
+            <div>
+              <label for="purpose">Purpose *</label>
+              <select id="purpose" name="purpose" required>
+                <option value="">Select purpose</option>
+                <option value="general-query">General Query</option>
+                <option value="feedback">Feedback</option>
+                <option value="request-suggestion">Request / Suggestion</option>
+                <option value="event-enquiry">Event Enquiry</option>
+                <option value="event-registration">Event Registration</option>
+                <option value="partnership">Partnership / Collaboration</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+              <div id="purposeError" class="field-error"></div>
+            </div>
+
+            <div>
+              <label for="subject">Subject *</label>
+              <input id="subject" name="subject" type="text" maxlength="100" required>
+              <div id="subjectError" class="field-error"></div>
+            </div>
+
+            <div>
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" minlength="10" maxlength="1000" required></textarea>
+              <div id="messageError" class="field-error"></div>
+              <p class="form-note">10–1000 characters. Do not submit passwords, payment details or other sensitive information.</p>
+            </div>
+
+            <label class="check-row">
+              <input type="checkbox" name="consent" required>
+              <span>I agree to be contacted regarding this enquiry.</span>
+            </label>
+
+            <div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>DMCE EventHub</strong><p>Learn IT • Explore IT • Master IT</p></div>
+      <p>© 2026 DMCE EventHub</p>
+    </div>
+  </footer>
+  <script src="../assets/js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+<rect width="800" height="420" fill="#eef5ff"/>
+<circle cx="400" cy="175" r="75" fill="#175cd3" opacity=".15"/>
+<text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#175cd3">DMCE</text>
+<text x="400" y="235" text-anchor="middle" font-family="Arial" font-size="28" fill="#172033">EventHub</text>
+</svg>
