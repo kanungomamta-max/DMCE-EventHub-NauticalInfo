@@ -6,6 +6,55 @@
   <meta name="description" content="DMCE EventHub - Discover, register and participate in academic and campus events.">
   <title>DMCE EventHub | Home</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Refined homepage visuals: cleaner icons + tighter right-aligned footer branding */
+    .hero-icon,
+    .event-image {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .hero-icon svg { width:78px; height:78px; display:block; }
+    .event-image svg { width:68px; height:68px; display:block; }
+    .event-image img { width:78px; height:78px; display:block; object-fit:contain; }
+    .event-image-tech svg { color:#0b7285; }
+    .event-image-cultural svg { color:#c45a18; }
+    .event-image-community svg { color:#2f6f44; }
+
+    .powered-by-wrap {
+      display:flex;
+      justify-content:flex-end;
+      margin-top:2px;
+    }
+    .powered-by {
+      display:inline-flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:7px;
+      margin-top:2px;
+      text-decoration:none;
+      color:inherit;
+      font-size:13px;
+      line-height:1.1;
+      white-space:nowrap;
+    }
+    .powered-by img {
+      width:66px;
+      height:auto;
+      max-height:30px;
+      object-fit:contain;
+      display:block;
+    }
+    .powered-by:hover img { opacity:.82; }
+    .footer-grid > div:last-child { text-align:right; }
+    .footer-grid > div:last-child > p { margin:0 0 2px; }
+
+    @media (max-width: 700px) {
+      .footer-grid > div:last-child { text-align:left; }
+      .powered-by-wrap { justify-content:flex-start; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -38,7 +87,16 @@
           </div>
         </div>
         <div class="hero-card" aria-label="Upcoming event preview">
-          <div class="hero-icon">🎓</div>
+          <div class="hero-icon" aria-hidden="true">
+            <svg viewBox="0 0 96 96" role="img" aria-label="Workshop" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 35 48 18l32 17-32 17z" fill="#F7B731" opacity=".18"/>
+              <path d="M16 35 48 18l32 17-32 17z" fill="none" stroke="#0B7285" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M27 45v18c12 10 30 10 42 0V45" fill="none" stroke="#0B7285" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M80 36v20" stroke="#F7B731" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="80" cy="62" r="5" fill="#F7B731"/>
+              <path d="M38 35h20" stroke="#F7B731" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
           <p class="small-label">FEATURED EVENT</p>
           <h2>Web Development Workshop</h2>
           <p>Learn • Build • Practice • Showcase</p>
@@ -59,7 +117,9 @@
 
         <div class="card-grid">
           <article class="event-card">
-            <div class="event-image event-image-tech">💻</div>
+            <div class="event-image event-image-tech" aria-label="Web Development Workshop" role="img">
+              <img src="assets/images/web-development-workshop-icon.svg" alt="Web Development Workshop icon">
+            </div>
             <div class="card-body">
               <span class="tag">Technical</span>
               <h3>Web Development Workshop</h3>
@@ -70,7 +130,7 @@
           </article>
 
           <article class="event-card">
-            <div class="event-image event-image-cultural">🎭</div>
+            <div class="event-image event-image-cultural" aria-label="Campus Cultural Fest" role="img"><img src="assets/images/campus-cultural-fest.svg" alt="Campus Cultural Fest icon"></div>
             <div class="card-body">
               <span class="tag">Cultural</span>
               <h3>Campus Cultural Fest</h3>
@@ -81,7 +141,7 @@
           </article>
 
           <article class="event-card">
-            <div class="event-image event-image-community">🤝</div>
+            <div class="event-image event-image-community" aria-label="Innovation and Ideas event" role="img"><img src="assets/images/innovation-ideas-icon.svg" alt="Innovation and Ideas icon"></div>
             <div class="card-body">
               <span class="tag">Community</span>
               <h3>Innovation & Ideas Forum</h3>
@@ -98,7 +158,28 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div><strong>DMCE EventHub</strong><p>Learn IT • Explore IT • Master IT</p></div>
-      <div><p>© 2026 DMCE EventHub. Student project for web development learning.</p></div>
+      <div>
+        <p>© 2026 DMCE EventHub. Student project for web development learning.</p>
+        <div class="powered-by-wrap">
+  <a
+    class="powered-by"
+    href="https://nauticalinfosolutions.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Powered by NauticalInfo Solutions Pvt. Ltd."
+  >
+    <span class="powered-label">Powered by</span>
+
+    <span class="powered-brand">
+      <img
+        src="assets/images/nauticalinfo-logo.svg"
+        alt="NauticalInfo Solutions Pvt. Ltd."
+      >
+      <span>NauticalInfo Solutions Pvt. Ltd.</span>
+    </span>
+  </a>
+</div>
+      </div>
     </div>
   </footer>
 
