@@ -3,14 +3,151 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DMCE EventHub | Events</title><link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .events-page .event-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    .events-page .event-image img {
+      width: 78px;
+      height: 78px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .events-page .powered-by-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2px;
+    }
+
+    .events-page .powered-by {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+      text-decoration: none;
+      color: inherit;
+      line-height: 1.1;
+      text-align: right;
+    }
+
+    .events-page .powered-label {
+      width: 100%;
+      text-align: right;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    .events-page .powered-brand {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .events-page .powered-brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .events-page .powered-by:hover {
+      opacity: 0.85;
+    }
+
+    .events-page .footer-grid > div:last-child {
+      text-align: right;
+    }
+
+    .events-page .footer-grid > div:last-child > p {
+      margin: 0 0 4px;
+    }
+
+    @media (max-width: 700px) {
+      .events-page .footer-grid > div:last-child {
+        text-align: left;
+      }
+
+      .events-page .powered-by-wrap {
+        justify-content: flex-start;
+      }
+
+      .events-page .powered-by {
+        align-items: flex-start;
+      }
+
+      .events-page .powered-label {
+        text-align: left;
+      }
+
+      .events-page .powered-brand {
+        justify-content: flex-start;
+      }
+    }
+  </style>
 </head>
-<body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="../index.html"><span class="brand-mark">D</span><span>DMCE <strong>EventHub</strong></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰</button><nav id="main-nav" class="main-nav" aria-label="Primary navigation"><a href="../index.html">Home</a><a class="active" href="events.html">Events</a><a href="registration.html">Registration</a><a href="about.html">About</a><a href="contact.html">Contact Us</a></nav></div></header>
+<body class="events-page" data-page-root="..">
+<div id="common-header"></div>
 <main><section class="page-hero"><div class="container"><p class="eyebrow">DISCOVER</p><h1>Upcoming Events</h1><p>Explore events and choose where you want to participate.</p></div></section>
 <section class="page-content"><div class="container card-grid">
-<article class="event-card"><div class="event-image event-image-tech">💻</div><div class="card-body"><span class="tag">Technical</span><h3>Web Development Workshop</h3><p>HTML, CSS and JavaScript through a progressive live project.</p><a class="btn btn-small" href="registration.html">Register</a></div></article>
-<article class="event-card"><div class="event-image event-image-cultural">🎭</div><div class="card-body"><span class="tag">Cultural</span><h3>Campus Cultural Fest</h3><p>Celebrating creativity, music, performance and student talent.</p><a class="btn btn-small" href="registration.html">Register</a></div></article>
-<article class="event-card"><div class="event-image event-image-community">🤝</div><div class="card-body"><span class="tag">Community</span><h3>Innovation & Ideas Forum</h3><p>Collaborate, exchange ideas and explore emerging technologies.</p><a class="btn btn-small" href="registration.html">Register</a></div></article>
+<article class="event-card"><div class="event-image event-image-tech" aria-label="Web Development Workshop">
+  <img src="../assets/images/web-development-workshop-icon.svg"
+       alt="Web Development Workshop icon">
+</div><div class="card-body"><span class="tag">Technical</span><h3>Web Development Workshop</h3><p>HTML, CSS and JavaScript through a progressive live project.</p><a class="btn btn-small" href="registration.html">Register</a></div></article>
+<article class="event-card"><div class="event-image event-image-cultural" aria-label="Campus Cultural Fest">
+  <img src="../assets/images/campus-cultural-fest.svg"
+       alt="Campus Cultural Fest icon">
+</div><div class="card-body"><span class="tag">Cultural</span><h3>Campus Cultural Fest</h3><p>Celebrating creativity, music, performance and student talent.</p><a class="btn btn-small" href="registration.html">Register</a></div></article>
+<article class="event-card"><div class="event-image event-image-community" aria-label="Innovation and Ideas Forum">
+  <img src="../assets/images/innovation-ideas-icon.svg"
+       alt="Innovation and Ideas Forum icon">
+</div><div class="card-body"><span class="tag">Community</span><h3>Innovation & Ideas Forum</h3><p>Collaborate, exchange ideas and explore emerging technologies.</p><a class="btn btn-small" href="registration.html">Register</a></div></article>
 </div></section></main>
-<footer class="site-footer"><div class="container footer-grid"><strong>DMCE EventHub</strong><p>© 2026 DMCE EventHub</p></div></footer><script src="../assets/js/script.js" defer></script>
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <strong>DMCE EventHub</strong>
+            <p>Learn IT • Explore IT • Master IT</p>
+        </div>
+
+        <div>
+            <p>© 2026 DMCE EventHub. Student project for web development learning.</p>
+
+            <div class="powered-by-wrap">
+                <a
+                    class="powered-by"
+                    href="https://nauticalinfosolutions.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Powered by NauticalInfo Solutions Pvt. Ltd."
+                >
+                    <span class="powered-label">Powered by</span>
+
+                    <span class="powered-brand">
+                        <img
+                            src="/assets/images/nauticalinfo-logo.svg"
+                            alt="NauticalInfo Solutions Pvt. Ltd."
+                        >
+                        <span>NauticalInfo Solutions Pvt. Ltd.</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="../assets/js/components.js"></script>
 </body></html>
